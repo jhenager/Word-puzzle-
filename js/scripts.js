@@ -11,7 +11,10 @@ $(document).ready(function(){
     for (let i=0; i<inputSentence.length; i++) {
       let charArray = inputSentence.split("a").join("--").split("e").join("--").split("i").join("--").split("o").join("--").split("u").join("--")
       
-      alert(charArray);
+      $("p#output").append(
+        charArray
+      )
+      break;
     }
     //for (let i=0; i<charArray.length; i++) {
       //if  (charArray[i] === ("a"||"e"||"o"||"u"||"i"))
